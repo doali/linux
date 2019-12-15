@@ -1,0 +1,7 @@
+qemu
+libvirt-dev 
+qemu-kvm 
+virt-manager 
+qemu-efi-aarch64
+cloud-init
+python3-openstackclient 
