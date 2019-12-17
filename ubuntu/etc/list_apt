@@ -19,3 +19,5 @@ tmux
 cmake
 lcov
 gcov
+libprotobuf-dev
+protobuf-compiler
