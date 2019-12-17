@@ -24,3 +24,5 @@ protobuf-compiler
 libpthread-stubs0-dev
 libpthread-workqueue-dev
 protobuf-c-compiler
+libgcc-8-dev
+libc++-dev
