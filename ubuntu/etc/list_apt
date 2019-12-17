@@ -26,3 +26,5 @@ libpthread-workqueue-dev
 protobuf-c-compiler
 libgcc-8-dev
 libc++-dev
+tilix
+python-jinja2
