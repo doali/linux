@@ -17,3 +17,5 @@ ocaml
 golang-go
 tmux
 cmake
+lcov
+gcov
