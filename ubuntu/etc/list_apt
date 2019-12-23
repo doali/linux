@@ -30,3 +30,7 @@ tilix
 python-jinja2
 curl
 makepasswd
+default-jre
+default-jdk
+openjdk-8-jre
+openjdk-8-jdk
