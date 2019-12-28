@@ -45,7 +45,7 @@ mkdir -p ${PATH_TO_EXTRACT}
 # - extraction de l'archive vers le repertoire pour les donnees extraites
 # - suppresion de l'archive
 for i_dico in "${HTTP_DICT_EN}" "${HTTP_DICT_EN_FR}"; do
-	echo "Download ${i_dico}"
+	echo "...download ${i_dico}"
 	curl -L -o ${PATH_DOWNLOAD_DICT}/${FILE_TAR_BZ2} ${i_dico} && tar -jxvf ${PATH_DOWNLOAD_DICT}/${FILE_TAR_BZ2} -C ${PATH_TO_EXTRACT} && rm ${PATH_DOWNLOAD_DICT}/${FILE_TAR_BZ2}
 done
 
@@ -55,7 +55,7 @@ done
 sudo mkdir -p ${PATH_DICT}
 # Lien symbolique pour stardict
 for i_path in $(ls ${PATH_TO_EXTRACT}); do
-	echo "Sets ${i_path}"
+	echo "...sets ${i_path}"
 	sudo ln -sf ${PATH_TO_EXTRACT}/${i_path} ${PATH_DICT} 
 done
 
