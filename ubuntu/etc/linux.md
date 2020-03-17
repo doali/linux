@@ -9,6 +9,7 @@ La description est informelle et doit faire l'objet, à titre d'exemple, de l'ut
 man
 info
 whatis
+apropos
 ```
 pour de plus amples informations.
 
@@ -33,3 +34,5 @@ pour de plus amples informations.
 |make|lancement de la compilation|
 |docker|logiciel permettant la conteneurisation|
 |mktemp|creation d'un repertoire / fichier temporaire|
+|dmesg|boucle d'informations concernant les interractions avec le noyau|
+|journalctl|affiche les infos nourries par systemd|
