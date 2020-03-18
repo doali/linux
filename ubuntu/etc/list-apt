@@ -43,3 +43,4 @@ python3-venv
 htop
 pandoc
 smcroute
+pylint
