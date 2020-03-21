@@ -1,19 +1,23 @@
 # Linux
-lundi 2 décembre 2019, 18:20:33 (UTC+0100)
 
-Description des principales commandes utlisées sur le projet.
+## Version
+- ```cat /etc/os-release```
+- ```lsb_release -a```
+- ```cat /etc/issue```
+- ```cat /etc/debian_version```
+- ```cat /etc/lsb-release```
+- ```cat /proc/version```
+- ```uname -a```
+- ```cat /proc/version_signature```
 
-La description est informelle et doit faire l'objet, à titre d'exemple, de l'utilisation des commandes
 
-```bash
-man
-info
-whatis
-apropos
-```
-pour de plus amples informations.
+## Obtenir de l'aide
+- `man`
+- `info`
+- `whatis`
+- `apropos`
 
-# Commandes
+## Commandes frequentes
 |commandes|description|
 |:---------|:-----------|
 |man|manuel de référence dans le terminal|
