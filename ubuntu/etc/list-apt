@@ -52,3 +52,4 @@ npm
 mono-devel
 pv
 cmake-curses-gui
+cmake-gui
