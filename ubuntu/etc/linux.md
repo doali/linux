@@ -43,3 +43,8 @@
 |stat|affiche, inode, type fichier / répertoire, périphérique...|
 |bat|similaire à cat|
 |tree|affiche l'arborescence sous la forme d'un arbre|
+
+## Exemples
+|commandes|utilisation|
+|:---------|:-----------|
+|grep|`cat <file> | grep "\S"` : supprime toutes les lignes vides|
