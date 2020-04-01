@@ -40,3 +40,6 @@
 |mktemp|creation d'un repertoire / fichier temporaire|
 |dmesg|boucle d'informations concernant les interractions avec le noyau|
 |journalctl|affiche les infos nourries par systemd|
+|stat|affiche, inode, type fichier / répertoire, périphérique...|
+|bat|similaire à cat|
+|tree|affiche l'arborescence sous la forme d'un arbre|
