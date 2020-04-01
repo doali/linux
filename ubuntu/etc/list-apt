@@ -51,3 +51,4 @@ nodejs
 npm
 mono-devel
 pv
+cmake-curses-gui
