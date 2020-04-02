@@ -54,3 +54,8 @@ pv
 cmake-curses-gui
 cmake-gui
 ncompress
+vim-youcompleteme 
+vim-doc 
+vim-gocomplete 
+vim-rails 
+vim-scripts 
