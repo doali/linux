@@ -1,0 +1,3 @@
+http://download.huzheng.org/dict.org/stardict-dictd_www.dict.org_gcide-2.4.2.tar.bz2
+http://downloads.sourceforge.net/xdxf/stardict-comn_sdict_axm03_English_French-2.4.2.tar.bz2
+https://sourceforge.net/projects/xdxf/files/dicts-stardict-form-xdxf/002c/stardict-comn_sdict05_french-english-2.4.2.tar.bz2
