@@ -34,11 +34,19 @@ get_script_dir() {
 # ------------------------------------------------------------------------------
 readonly FILE_CSS=md.css
 readonly DIR_SCRIPT=$(get_script_dir) # gets from stdout
+readonly PANDOC=$(which pandoc) 
 # ------------------------------------------------------------------------------
 
 error_path() {
 	echo "Error path"
 	exit 1
+}
+
+error_cmd()
+{
+  echo "Error pandoc not found"
+  echo "Install it with : sudo apt install pandoc"
+  exit 1
 }
 
 # Generate
@@ -57,7 +65,7 @@ gen() {
 
 	[ ! -f ${path_output}/${FILE_CSS} ] && cp -f ${DIR_SCRIPT}/${FILE_CSS} ${path_output}
 
-	$(which pandoc) -f markdown -t html ${path_md} --css ${FILE_CSS} >${path_output}/${file_name_md_no_extension}.html
+	${PANDOC} -f markdown -t html ${path_md} --css ${FILE_CSS} >${path_output}/${file_name_md_no_extension}.html
 }
 
 usage() {
@@ -65,6 +73,10 @@ usage() {
 }
 
 # ------------------------------------------------------------------------------
+if [ -z ${PANDOC} ]; then
+  error_cmd
+fi
+
 if [ ${#} -eq 2 ]; then
 	gen ${1} ${2}
 elif [ ${#} -eq 1 ]; then
