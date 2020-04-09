@@ -49,3 +49,6 @@
 |:---------|:-----------|
 |grep|`cat <file> | grep "\S"` : supprime toutes les lignes vides|
 |sed|`sed -i "s/^$/#/" CPackConfig.cmake` : ajoute un `#` sur toutes les lignes vides; -i modification sur place|
+
+## Biblio
+- [Cheat sheet](http://cb.vu/unixtoolbox.xhtml)
