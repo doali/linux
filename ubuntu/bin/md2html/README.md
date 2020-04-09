@@ -12,7 +12,7 @@ Convert a file written in Markdown to HTML
 
 # What is done
 Generate
-- an HTML file from ist Markdown (both have the same name)
+- an HTML file from its Markdown (both have the same name)
 - along side with its md.css file
 - both located in output path
 
