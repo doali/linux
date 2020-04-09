@@ -65,7 +65,7 @@ gen() {
 
 	[ ! -f ${path_output}/${FILE_CSS} ] && cp -f ${DIR_SCRIPT}/${FILE_CSS} ${path_output}
 
-	${PANDOC} -f markdown -t html ${path_md} --css ${FILE_CSS} >${path_output}/${file_name_md_no_extension}.html
+	${PANDOC} -f markdown -t html ${path_md} --css ${FILE_CSS} > ${path_output}/${file_name_md_no_extension}.html
 }
 
 usage() {
