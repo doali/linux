@@ -2,13 +2,10 @@
 
 # Requirements
  - bash (GNU Bourne-Again SHell)
- - pandoc
-```bash
-sudo apt install pandoc
-```
+ - pandoc : `sudo apt install pandoc`
 
 # Test
-- Ubuntu 18.04.4 LTS \n \l
+- Ubuntu 18.04.4 LTS
 
 # Description
 Convert a file written in Markdown to HTML
