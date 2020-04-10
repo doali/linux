@@ -8,7 +8,7 @@
 # =============================================================================
 
 # ------------------------------------------------------------------------------
-readonly SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" >/dev/null 2>&1 && pwd)"
+readonly CURR_DIR=$(pwd)
 readonly TMP_WORK_FILE=$(mktemp)
 # ------------------------------------------------------------------------------
 
@@ -21,7 +21,7 @@ replace_all() {
 	done
 
 	for elmnt in $(cat ${TMP_WORK_FILE}); do
-		mv ${SCRIPT_DIR}/$(echo $elmnt) ${SCRIPT_DIR}/$(echo $elmnt | sed -e "s/${old}/${new}/g")
+		mv ${CURR_DIR}/$(echo $elmnt) ${CURR_DIR}/$(echo $elmnt | sed -e "s/${old}/${new}/g")
 	done
 }
 
@@ -32,7 +32,7 @@ replace_word() {
 
 	[ -e ${word} ] && [[ ${word} =~ ${old} ]] && echo "${word}" >>${TMP_WORK_FILE}
 
-	mv ${SCRIPT_DIR}/$(echo ${word}) ${SCRIPT_DIR}/$(echo ${word} | sed -e "s/${old}/${new}/g")
+	mv ${CURR_DIR}/$(echo ${word}) ${CURR_DIR}/$(echo ${word} | sed -e "s/${old}/${new}/g")
 }
 
 replace_all_underscore() {
