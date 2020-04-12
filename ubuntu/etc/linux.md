@@ -1,6 +1,7 @@
 # Linux
 
 ## Version
+
 - ```cat /etc/os-release```
 - ```lsb_release -a```
 - ```cat /etc/issue```
@@ -12,12 +13,14 @@
 
 
 ## Obtenir de l'aide
+
 - `man`
 - `info`
 - `whatis`
 - `apropos`
 
 ## Commandes frequentes
+
 |commandes|description|
 |:---------|:-----------|
 |man|manuel de référence dans le terminal|
@@ -44,11 +47,21 @@
 |bat|similaire à cat|
 |tree|affiche l'arborescence sous la forme d'un arbre|
 
-## Exemples
+## Filtrage
+
 |commandes|utilisation|
 |:---------|:-----------|
 |grep|`cat <file> | grep "\S"` : supprime toutes les lignes vides|
 |sed|`sed -i "s/^$/#/" CPackConfig.cmake` : ajoute un `#` sur toutes les lignes vides; -i modification sur place|
 
+## Services
+
+|commandes|utilisation|
+|:---------|:-----------|
+|`systemctl [start|stop|status|enable|disable|is-enabled] <nom_service>.service` | actions sur un service `<nom_service>` (enable : at boot time)|
+
 ## Biblio
+
 - [Cheat sheet](http://cb.vu/unixtoolbox.xhtml)
+- [linoxide](https://linoxide.com/linux-how-to/enable-disable-services-ubuntu-systemd-upstart/)
+
