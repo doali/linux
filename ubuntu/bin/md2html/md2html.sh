@@ -69,8 +69,9 @@ gen() {
 
 # Delete all files ending by .html or .css
 clean() {
-	rm -i *.html
-	rm md.css
+  local exist_html=$(ls *.html 2>/dev/null | wc -l)
+  [ ${exist_html} -gt 0 ] && rm -i *.html
+	[ -f md.css ] && rm md.css
 }
 
 usage() {
