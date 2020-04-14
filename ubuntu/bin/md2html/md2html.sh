@@ -70,7 +70,7 @@ gen() {
 # Delete all files ending by .html or .css
 clean() {
 	rm -i *.html
-	rm -i*.md
+	rm -i *.md
 }
 
 usage() {
