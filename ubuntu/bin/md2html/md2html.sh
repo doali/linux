@@ -6,7 +6,7 @@
 # Convert a file written in Markdown to HTML
 # - use pandoc
 # - css file
-# CSS used comes from 
+# CSS used comes from
 # https://raw.githubusercontent.com/KrauseFx/markdown-to-html-github-style/master/style.css
 # ------------------------------------------------------------------------------
 
@@ -25,7 +25,7 @@ get_script_dir() {
 		[[ $source != /* ]] && source="$dir/$source"
 	done
 	dir="$(cd -P "$(dirname "$source")" && pwd)"
-  echo $dir # returns to sdout (clever mean to return results)
+	echo $dir # returns to sdout (clever mean to return results)
 }
 
 # symlinks are not handled using as described in the following command
@@ -34,7 +34,7 @@ get_script_dir() {
 # ------------------------------------------------------------------------------
 readonly FILE_CSS=md.css
 readonly DIR_SCRIPT=$(get_script_dir) # gets from stdout
-readonly PANDOC=$(which pandoc) 
+readonly PANDOC=$(which pandoc)
 # ------------------------------------------------------------------------------
 
 error_path() {
@@ -42,11 +42,10 @@ error_path() {
 	exit 1
 }
 
-error_cmd()
-{
-  echo "Error pandoc not found"
-  echo "Install it with : sudo apt install pandoc"
-  exit 1
+error_cmd() {
+	echo "Error pandoc not found"
+	echo "Install it with : sudo apt install pandoc"
+	exit 1
 }
 
 # Generate
@@ -65,22 +64,37 @@ gen() {
 
 	[ ! -f ${path_output}/${FILE_CSS} ] && cp -f ${DIR_SCRIPT}/${FILE_CSS} ${path_output}
 
-	${PANDOC} -f markdown -t html ${path_md} --css ${FILE_CSS} > ${path_output}/${file_name_md_no_extension}.html
+	${PANDOC} -f markdown -t html ${path_md} --css ${FILE_CSS} >${path_output}/${file_name_md_no_extension}.html
+}
+
+# Delete all files ending by .html or .css
+clean() {
+	rm -i *.html
+	rm -i*.md
 }
 
 usage() {
-	echo "Usage: $(basename ${0}) <path_markdown_file> [<path_output>]"
+	echo "Usage:"
+	echo "\t$(basename ${0}) <path_markdown_file> [<path_output>]"
+	echo "\t$(basename ${0}) --clean"
 }
 
 # ------------------------------------------------------------------------------
 if [ -z ${PANDOC} ]; then
-  error_cmd
+	error_cmd
 fi
 
 if [ ${#} -eq 2 ]; then
 	gen ${1} ${2}
 elif [ ${#} -eq 1 ]; then
-	gen ${1} $(pwd)
+	case "$1" in
+	--clean)
+		clean
+		;;
+	*)
+		gen ${1} $(pwd)
+		;;
+	esac
 else
 	usage
 fi
