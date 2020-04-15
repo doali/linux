@@ -76,10 +76,10 @@ elif [ ${#} -le 3 ]; then
     -w)
       case "${2}" in 
         -rev)
-          replace_all_hyphens ${3}
+          replace_word_hyphens ${3}
           ;;
         *)
-          replace_all_underscore ${2}
+          replace_word_underscore ${2}
           ;;
       esac
       ;;
