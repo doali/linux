@@ -76,8 +76,8 @@ clean() {
 
 usage() {
 	echo "Usage:"
-	echo "\t$(basename ${0}) <path_markdown_file> [<path_output>]"
-	echo "\t$(basename ${0}) --clean"
+	echo -e "\t$(basename ${0}) <path_markdown_file> [<path_output>]"
+	echo -e "\t$(basename ${0}) --clean"
 }
 
 # ------------------------------------------------------------------------------
