@@ -69,3 +69,4 @@ chromium-browser
 bats
 dmtx-utils
 w3m
+clang-format
