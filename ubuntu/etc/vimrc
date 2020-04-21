@@ -84,6 +84,14 @@ Plugin 'bash-support.vim'
 Plugin 'vim-ruby/vim-ruby'
 "
 " ----------------------------------------------------------------
+" https://github.com/Shougo/neocomplcache.vim
+Plugin 'Shougo/neocomplcache.vim'
+" https://github.com/thinca/vim-ref
+Plugin 'thinca/vim-ref'
+" https://github.com/jansenm/vim-cmake
+Plugin 'jansenm/vim-cmake'
+"
+" ----------------------------------------------------------------
 " Add maktaba and codefmt to the runtimepath.
 " https://github.com/google/vim-codefmt
 " (The latter must be installed before it can be used.)
@@ -94,21 +102,13 @@ Plugin 'google/vim-codefmt'
 Plugin 'google/vim-glaive'
 " 
 " ----------------------------------------------------------------
-" https://github.com/Shougo/neocomplcache.vim
-Plugin 'Shougo/neocomplcache.vim'
-" https://github.com/thinca/vim-ref
-Plugin 'thinca/vim-ref'
-" https://github.com/jansenm/vim-cmake
-Plugin 'jansenm/vim-cmake'
-"
-" ----------------------------------------------------------------
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 " the glaive#Install() should go after the "call vundle#end()"
 call glaive#Install()
 " Optional: Enable codefmt's default mappings on the <Leader>= prefix.
 Glaive codefmt plugin[mappings]
-Glaive codefmt google_java_executable="java -jar /path/to/google-java-format-VERSION-all-deps.jar"
+"Glaive codefmt google_java_executable="java -jar /path/to/google-java-format-VERSION-all-deps.jar"
 filetype plugin indent on    " required
 " To ignore plugin indent changes, instead use:
 filetype plugin on

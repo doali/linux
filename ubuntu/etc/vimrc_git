@@ -1,0 +1,4 @@
+# Si des erreurs surviennent suite à des modifications de ~/.vimrc
+# Executer la commandes suivante
+git config --global core.editor /usr/bin/vim
+# a permis de corriger le problème rencontré lors de : git commit
