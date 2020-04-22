@@ -92,6 +92,10 @@ Plugin 'thinca/vim-ref'
 Plugin 'jansenm/vim-cmake'
 "
 " ----------------------------------------------------------------
+" https://vimawesome.com/plugin/ansible-vim
+Plugin 'pearofducks/ansible-vim'
+"
+" ----------------------------------------------------------------
 " Add maktaba and codefmt to the runtimepath.
 " https://github.com/google/vim-codefmt
 " (The latter must be installed before it can be used.)
