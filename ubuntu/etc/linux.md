@@ -67,8 +67,23 @@
 for i in $(seq 0 $(expr $RANDOM % 100)) ; do echo -n $(./list_comprehension_2.py) ; done ; echo
 ```
 
+## Special files
+
+
+|commandes|utilisation|
+|---------|-----------|
+|/dev/null|ne renvoie rien sur la stdout|
+|/dev/null|produit un flux continue de valeurs NULL (zero values bytes)
+
+_Utilisation_
+
+- `cat /dev/zero > file` : ajoute en permanence des '\0'
+- `dd if=/dev/zero of=my_file  count=10` taille non nulle !!
+- `cat /dev/null > file` : rien n'est ajouté
+- `dd if=/dev/null of=my_file  count=10` aucun bytes copiés
+
 ## Biblio
 
 - [Cheat sheet](http://cb.vu/unixtoolbox.xhtml)
 - [linoxide](https://linoxide.com/linux-how-to/enable-disable-services-ubuntu-systemd-upstart/)
-
+- [stackexchange](https://unix.stackexchange.com/questions/254384/difference-between-dev-null-and-dev-zero)
