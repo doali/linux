@@ -54,18 +54,18 @@ error_cmd() {
 # - along side with its md.css file
 # - both located in $path_output
 gen() {
-  local path_md=${1}
-  local path_output=${2}
+  local path_md="${1}"
+  local path_output="${2}"
 
-  [ -f ${path_md} ] && [ -d ${path_output} ] || error_path
+  [ -f "${path_md}" ] && [ -d "${path_output}" ] || error_path
 
-  local file_name_md=$(basename ${path_md})
+  local file_name_md="$(basename ${path_md})"
 
-  file_name_md_no_extension=${file_name_md%.*}
+  file_name_md_no_extension="${file_name_md%.*}"
 
-  [ ! -f ${path_output}/${FILE_CSS} ] && cp -f ${DIR_SCRIPT}/${FILE_CSS} ${path_output}
+  [ ! -f "${path_output}/${FILE_CSS}" ] && cp -f "${DIR_SCRIPT}/${FILE_CSS}" "${path_output}"
 
-  ${PANDOC} -f markdown -t html ${path_md} --css ${FILE_CSS} > ${path_output}/${file_name_md_no_extension}.html
+  ${PANDOC} -f markdown -t html "${path_md}" --css "${FILE_CSS}" > "${path_output}/${file_name_md_no_extension}.html"
 }
 
 # Delete all files ending by .html or .css
@@ -77,8 +77,8 @@ clean() {
 
 # View html file
 view() {
-  local file=$1
-  [ -f $file ] && ${BROWSER} --new-tab ${file} || error_path
+  local file="${1}"
+  [ -f "${file}" ] && ${BROWSER} --new-tab "${file}" || error_path
 }
 
 usage() {
@@ -96,10 +96,10 @@ fi
 if [ ${#} -eq 2 ]; then
   case "${1}" in
     --view)
-      [ -z ${2} ] && usage || view ${2}
+      [ -z "${2}" ] && usage || view "${2}"
       ;;
     *)
-      gen ${1} ${2}
+      gen "${1}" "${2}"
       ;;
   esac
 elif [ ${#} -eq 1 ]; then
@@ -111,7 +111,7 @@ elif [ ${#} -eq 1 ]; then
       usage
       ;;
     *)
-      gen ${1} $(pwd)
+      gen "${1}" "$(pwd)"
       ;;
   esac
 else
