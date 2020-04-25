@@ -47,6 +47,8 @@
 |bat|similaire à cat|
 |tree|affiche l'arborescence sous la forme d'un arbre|
 |$RANDOM|fonction interne bash générant un nombre pseudo-aléatoire entre 0 et 32767|
+|!!:$|retourne les arguments de la commande précédente|
+|!$|retourne les arguments de la commande précédente|
 
 ## Filtrage
 
