@@ -144,3 +144,47 @@ alias radio-bbc-news='mplayer http://bbcwssc.ic.llnwd.net/stream/bbcwssc_mp1_ws-
 # Convert
 alias yaml2js="python3 -c 'import sys, yaml, json; json.dump(yaml.load(sys.stdin), sys.stdout, indent=4)'"
 
+# Path
+export PATH=${HOME}/.local/bin:${PATH}
+
+# git-github : first level
+alias carto='cd /home/blackpc/git-github/carto'
+alias coding='cd /home/blackpc/git-github/coding'
+alias computing='cd /home/blackpc/git-github/computing'
+alias database='cd /home/blackpc/git-github/database'
+alias devops='cd /home/blackpc/git-github/devops'
+alias framework='cd /home/blackpc/git-github/framework'
+alias github='cd /home/blackpc/git-github/github'
+alias linux='cd /home/blackpc/git-github/linux'
+alias spring-ticket='cd /home/blackpc/git-github/spring-ticket'
+alias training-sport='cd /home/blackpc/git-github/training-sport'
+alias vuelayers-vue-cli='cd /home/blackpc/git-github/vuelayers-vue-cli'
+
+# git-github : coding level 
+alias coding-c='cd /home/blackpc/git-github/coding/c/coding'
+alias coding-cpp='cd /home/blackpc/git-github/coding/cpp/coding'
+alias coding-go='cd /home/blackpc/git-github/coding/go/coding'
+alias coding-html-css='cd /home/blackpc/git-github/coding/html-css/coding'
+alias coding-java='cd /home/blackpc/git-github/coding/java/coding'
+alias coding-js='cd /home/blackpc/git-github/coding/js/coding'
+alias coding-json='cd /home/blackpc/git-github/coding/json/coding'
+alias coding-markdown='cd /home/blackpc/git-github/coding/markdown/coding'
+alias coding-python='cd /home/blackpc/git-github/coding/python/coding'
+alias coding-ruby='cd /home/blackpc/git-github/coding/ruby/coding'
+alias coding-shell='cd /home/blackpc/git-github/coding/shell/coding'
+alias coding-yaml='cd /home/blackpc/git-github/coding/yaml/coding'
+
+# git-github : doc level 
+alias doc-c='cd /home/blackpc/git-github/coding/c/doc'
+alias doc-cpp='cd /home/blackpc/git-github/coding/cpp/doc'
+alias doc-go='cd /home/blackpc/git-github/coding/go/doc'
+alias doc-html-css='cd /home/blackpc/git-github/coding/html-css/doc'
+alias doc-java='cd /home/blackpc/git-github/coding/java/doc'
+alias doc-js='cd /home/blackpc/git-github/coding/js/doc'
+alias doc-json='cd /home/blackpc/git-github/coding/json/doc'
+alias doc-markdown='cd /home/blackpc/git-github/coding/markdown/doc'
+alias doc-python='cd /home/blackpc/git-github/coding/python/doc'
+alias doc-ref-doc='cd /home/blackpc/git-github/coding/ref-doc/doc'
+alias doc-ruby='cd /home/blackpc/git-github/coding/ruby/doc'
+alias doc-shell='cd /home/blackpc/git-github/coding/shell/doc'
+alias doc-yaml='cd /home/blackpc/git-github/coding/yaml/doc'
