@@ -84,8 +84,24 @@ _Utilisation_
 - `cat /dev/null > file` : rien n'est ajouté
 - `dd if=/dev/null of=my_file  count=10` aucun bytes copiés
 
+## Commonly things
+
+...read, but what are they exactly ?
+
+### `rc` in...
+
+- for example : `bashrc, vimrc, lcovrc`
+
+means `run commands` or else `run control`
+
+- used for any file that contains startup information for a command
+- controls how a program runs 
+- contains its initial configuration
+
 ## Biblio
 
 - [Cheat sheet](http://cb.vu/unixtoolbox.xhtml)
 - [linoxide](https://linoxide.com/linux-how-to/enable-disable-services-ubuntu-systemd-upstart/)
 - [stackexchange](https://unix.stackexchange.com/questions/254384/difference-between-dev-null-and-dev-zero)
+- [rc stackoverflow](https://superuser.com/questions/173165/what-does-the-rc-in-bashrc-etc-mean)
+- [rc esr](http://www.catb.org/~esr/writings/taoup/html/ch10s03.html)
