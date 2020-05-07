@@ -148,6 +148,8 @@ alias yaml2js="python3 -c 'import sys, yaml, json; json.dump(yaml.load(sys.stdin
 export PATH=${HOME}/.local/bin:${PATH}
 
 # git-github : first level
+# cd ~/git-github
+# for i in $(ls); do echo "alias $i='cd $(pwd)/$i'" >>~/.bashrc; done
 alias carto='cd /home/blackpc/git-github/carto'
 alias coding='cd /home/blackpc/git-github/coding'
 alias computing='cd /home/blackpc/git-github/computing'
@@ -161,6 +163,8 @@ alias training-sport='cd /home/blackpc/git-github/training-sport'
 alias vuelayers-vue-cli='cd /home/blackpc/git-github/vuelayers-vue-cli'
 
 # git-github : coding level 
+# cd ~/git-github
+# for i in $(ls); do echo "alias coding-$i='cd $(pwd)/$i/coding'" >>~/.bashrc; done
 alias coding-c='cd /home/blackpc/git-github/coding/c/coding'
 alias coding-cpp='cd /home/blackpc/git-github/coding/cpp/coding'
 alias coding-go='cd /home/blackpc/git-github/coding/go/coding'
@@ -175,6 +179,8 @@ alias coding-shell='cd /home/blackpc/git-github/coding/shell/coding'
 alias coding-yaml='cd /home/blackpc/git-github/coding/yaml/coding'
 
 # git-github : doc level 
+# cd ~/git-github
+# for i in $(ls); do echo "alias doc-$i='cd $(pwd)/$i/doc'" >>~/.bashrc; done
 alias doc-c='cd /home/blackpc/git-github/coding/c/doc'
 alias doc-cpp='cd /home/blackpc/git-github/coding/cpp/doc'
 alias doc-go='cd /home/blackpc/git-github/coding/go/doc'
@@ -188,3 +194,14 @@ alias doc-ref-doc='cd /home/blackpc/git-github/coding/ref-doc/doc'
 alias doc-ruby='cd /home/blackpc/git-github/coding/ruby/doc'
 alias doc-shell='cd /home/blackpc/git-github/coding/shell/doc'
 alias doc-yaml='cd /home/blackpc/git-github/coding/yaml/doc'
+
+# Connect to smartphone
+# After adding public key
+alias ssh-phone-x='ssh -p 22000 u0_a63@192.168.0.11'
+alias ssh-phone-y='ssh -p 22001 u0_a132@192.168.0.12'
+
+# Hide line number for history command line
+#history | sed 's/^ *[0-9]* *//'
+alias hist-no-num='history | cut -d\  -f4-'
+#history | sed 's/^[ ]*[0-9]*[ ]*//'
+#history | cut -c 8- # not the best way... 
