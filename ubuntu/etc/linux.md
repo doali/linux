@@ -11,6 +11,12 @@
 - ```uname -a```
 - ```cat /proc/version_signature```
 
+## Variables
+
+- `getconf -a`
+
+> Displays all configuration variables for the current system \
+> and their values.
 
 ## Obtenir de l'aide
 
