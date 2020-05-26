@@ -95,3 +95,4 @@ freeglut3-dev
 mesa-common-dev
 bvi
 doxygen
+graphviz
