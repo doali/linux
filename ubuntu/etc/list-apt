@@ -98,3 +98,4 @@ doxygen
 graphviz
 sqlite3
 sqlitebrowser
+libsqlite3-dev
