@@ -96,3 +96,5 @@ mesa-common-dev
 bvi
 doxygen
 graphviz
+sqlite3
+sqlitebrowser
