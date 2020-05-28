@@ -7,7 +7,6 @@ cmake
 cmake-curses-gui
 cmake-gui
 cucumber
-cucumber
 curl
 default-jdk
 default-jre
