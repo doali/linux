@@ -144,9 +144,6 @@ alias radio-bbc-news='mplayer http://bbcwssc.ic.llnwd.net/stream/bbcwssc_mp1_ws-
 # Convert
 alias yaml2js="python3 -c 'import sys, yaml, json; json.dump(yaml.load(sys.stdin), sys.stdout, indent=4)'"
 
-# Path
-export PATH=${HOME}/.local/bin:${PATH}
-
 # git-github : first level
 # cd ~/git-github
 # for i in $(ls); do echo "alias $i='cd $(pwd)/$i'" >>~/.bashrc; done
