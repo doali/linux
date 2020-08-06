@@ -81,7 +81,7 @@ for i in $(seq 0 $(expr $RANDOM % 100)) ; do echo -n $(./list_comprehension_2.py
 |commandes|utilisation|
 |---------|-----------|
 |/dev/null|ne renvoie rien sur la stdout|
-|/dev/null|produit un flux continue de valeurs NULL (zero values bytes)
+|/dev/zero|produit un flux continue de valeurs NULL (zero values bytes)
 
 _Utilisation_
 
