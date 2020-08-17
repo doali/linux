@@ -68,6 +68,7 @@
 |commandes|utilisation|
 |:---------|:-----------|
 |`systemctl [start|stop|status|enable|disable|is-enabled] <nom_service>.service` | actions sur un service `<nom_service>` (enable : at boot time)|
+|`service --status-all`|renvoie l'état de tous les services|
 
 ## Fun
 
