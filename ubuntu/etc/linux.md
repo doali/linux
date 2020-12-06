@@ -55,6 +55,14 @@
 |$RANDOM|fonction interne bash générant un nombre pseudo-aléatoire entre 0 et 32767|
 |!!:$|retourne les arguments de la commande précédente|
 |!$|retourne les arguments de la commande précédente|
+|find|rechercher des fichiers sur critères|
+
+## Recherche
+
+|commandes|utilisation|
+|:---------|:-----------|
+|`find . -type f -exec ls -l {} \;`|exécute la commande `ls -l` sur tous les fichiers du répertoire courant|
+|`find . -mmin -1 -exec cat {} \;`|affiche tous les fichiers modifiés il y a moins de 1 minute|
 
 ## Filtrage
 
@@ -77,7 +85,6 @@ for i in $(seq 0 $(expr $RANDOM % 100)) ; do echo -n $(./list_comprehension_2.py
 ```
 
 ## Special files
-
 
 |commandes|utilisation|
 |---------|-----------|
@@ -112,3 +119,4 @@ means `run commands` or else `run control`
 - [stackexchange](https://unix.stackexchange.com/questions/254384/difference-between-dev-null-and-dev-zero)
 - [rc stackoverflow](https://superuser.com/questions/173165/what-does-the-rc-in-bashrc-etc-mean)
 - [rc esr](http://www.catb.org/~esr/writings/taoup/html/ch10s03.html)
+- [linux-france](http://www.linux-france.org/article/memo/node126.html)
