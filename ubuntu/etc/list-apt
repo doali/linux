@@ -102,3 +102,7 @@ valgrind
 telnet-ssl
 tshark
 adb
+pygame
+espeak
+python-pip
+libclang-dev
