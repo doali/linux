@@ -107,3 +107,4 @@ espeak
 python-pip
 libclang-dev
 nasm
+gcc-multilib
