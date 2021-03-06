@@ -106,3 +106,4 @@ pygame
 espeak
 python-pip
 libclang-dev
+nasm
