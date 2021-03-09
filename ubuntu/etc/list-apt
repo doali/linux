@@ -108,3 +108,4 @@ python-pip
 libclang-dev
 nasm
 gcc-multilib
+android-sdk
