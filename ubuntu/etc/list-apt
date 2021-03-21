@@ -12,7 +12,6 @@ cmake-gui
 cucumber
 curl
 default-jdk
-default-jdk
 default-jre
 dh-exec
 dmtx-utils
@@ -67,8 +66,6 @@ netstat-nat
 net-tools
 nmap
 nodejs
-nodejs
-npm
 npm
 ocaml
 openjdk-8-jdk
