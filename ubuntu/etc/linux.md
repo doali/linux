@@ -68,14 +68,14 @@
 
 |commandes|utilisation|
 |:---------|:-----------|
-|grep|`cat <file> | grep "\S"` : supprime toutes les lignes vides|
+|grep|`cat file_name \| grep "\S"` : supprime toutes les lignes vides|
 |sed|`sed -i "s/^$/#/" CPackConfig.cmake` : ajoute un `#` sur toutes les lignes vides; -i modification sur place|
 
 ## Services
 
 |commandes|utilisation|
 |:---------|:-----------|
-|`systemctl [start|stop|status|enable|disable|is-enabled] <nom_service>.service` | actions sur un service `<nom_service>` (enable : at boot time)|
+|`systemctl [start\|stop\|status\|enable\|disable\|is-enabled] <nom_service>.service` | actions sur un service `<nom_service>` (enable : at boot time)|
 |`service --status-all`|renvoie l'état de tous les services|
 
 ## Fun
@@ -83,6 +83,11 @@
 ```bash
 for i in $(seq 0 $(expr $RANDOM % 100)) ; do echo -n $(./list_comprehension_2.py) ; done ; echo
 ```
+
+**Serveur HTTP** : _une ligne de commande_
+
+- `python3 -m http.server 8000`
+- `python2 -m SimpleHTTPServer 8000`
 
 ## Special files
 
