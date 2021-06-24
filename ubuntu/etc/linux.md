@@ -18,6 +18,12 @@
 > Displays all configuration variables for the current system \
 > and their values.
 
+**PATH** _Reset to its default value_
+
+```bash
+PATH=$(getconf PATH)
+```
+
 ## Obtenir de l'aide
 
 - `man`
