@@ -2,9 +2,13 @@ export PS1="\[\033[0;31m\]\u \[\033[0;36m\]\h:\w\[\033[00m\] \n\[\033[0;31m\]>\[
 
 # My custom settings
 alias tree='tree -C'
+alias tt1='tree -L 1'
 
 # asn1c ASN.1
 export PATH=${PATH}:${PWD}/bin/bin
 
 # Radio
 alias radio_inter="mpv http://direct.franceinter.fr/live/franceinter-hifi.aac"
+
+# Weather
+alias w_catane='curl wttr.in/catane'
