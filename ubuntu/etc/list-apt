@@ -11,6 +11,7 @@ cmake-curses-gui
 cmake-gui
 cucumber
 curl
+dcraw
 default-jdk
 default-jre
 dh-exec
@@ -83,6 +84,13 @@ python3-venv
 python-jinja2
 python-pip
 qrencode
+qt5-default
+qt5-doc
+qt5-doc-html
+qtbase5-doc-html
+qtbase5-examples
+qtcreator
+redis-server
 ruby
 ruby-all-dev
 ruby-google-protobuf
@@ -113,11 +121,3 @@ whois
 wireshark
 xpdf
 zbar-tools
-qtcreator
-qt5-default
-qt5-doc
-qt5-doc-html
-qtbase5-doc-html
-qtbase5-examples
-dcraw
-redis-server
