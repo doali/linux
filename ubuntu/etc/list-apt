@@ -51,6 +51,9 @@ libnl-route-3-dev
 libprotobuf-dev
 libpthread-stubs0-dev
 libpthread-workqueue-dev
+libqt5multimedia5
+libqt5multimedia5-plugins
+libqt5multimediawidgets5
 libsqlite3-dev
 libxtables-dev
 makepasswd
@@ -92,6 +95,7 @@ qt5-doc-html
 qtbase5-doc-html
 qtbase5-examples
 qtcreator
+qtmultimedia5-dev
 redis-server
 ruby
 ruby-all-dev
