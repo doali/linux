@@ -32,6 +32,7 @@ alias radio_inter='mpv http://direct.franceinter.fr/live/franceinter-hifi.aac'
 alias w_paris='curl wttr.in/paris'
 alias w_catane='curl wttr.in/catane'
 alias w_grenoble='curl wttr.in/grenoble'
+alias w_bleau='curl wttr.in/fontainebleau'
 
 # bitcoin
 alias btc='curl --silent https://api.coindesk.com/v1/bpi/currentprice.json | python3 -c "import json,sys;print(json.load(sys.stdin)[\"bpi\"][\"EUR\"][\"rate\"])"'
