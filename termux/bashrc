@@ -2,7 +2,7 @@ export PS1="\[\033[0;31m\]\u \[\033[0;36m\]\h:\w\[\033[00m\] \n\[\033[0;31m\]>\[
 
 # My custom settings
 # asn1c ASN.1
-export PATH=${PATH}:${PWD}/bin/bin
+export PATH=${PATH}:${PWD}/bin/bin:${HOME}/.local/bin
 
 # navigation
 alias tree='tree -C'
@@ -13,28 +13,25 @@ alias apt_update='apt update && apt list --upgradable && apt upgrade -y'
 alias apt_re_cl='apt autoremove && apt autoclean && apt remove && apt clean'
 
 # ssh
-alias ssh-pi='ssh -p <port> <user>@<ip>'
+#alias ssh_pi='ssh -p <port> <user>@<address>'
+# VM under host Windows10
+# - bridge mode must be set instead of NAT
+# - (running ubuntu)
+alias ssh_vm='ssh <port>@<address>'
 
 # github
-alias token='cat /sdcard/Documents/<token>'
+alias token_doali='cat /sdcard/Documents/token_doali'
+alias git-github='cd /sdcard/Documents/git-github'
 
 # Google
 alias ip_google='echo 142.250.75.227'
-
 # Radio
 alias radio_inter='mpv http://direct.franceinter.fr/live/franceinter-hifi.aac'
 
 # Weather
 alias w_paris='curl wttr.in/paris'
+alias w_catane='curl wttr.in/catane'
 alias w_grenoble='curl wttr.in/grenoble'
 
 # bitcoin
 alias btc='curl --silent https://api.coindesk.com/v1/bpi/currentprice.json | python3 -c "import json,sys;print(json.load(sys.stdin)[\"bpi\"][\"EUR\"][\"rate\"])"'
-
-# SSH
-alias ssh-one='ssh -p <port> <user>@<ip>' # sshd -p <port>
-
-# VM under host Windows10
-# - bridge mode must be set instead of NAT
-# - (running ubuntu)
-alias ssh_vm='ssh <user>@<ip>'
