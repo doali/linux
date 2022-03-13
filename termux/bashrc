@@ -21,7 +21,7 @@ alias ssh_vm='ssh <port>@<address>'
 
 # github
 alias token_doali='cat /sdcard/Documents/token_doali'
-alias git-github='cd /sdcard/Documents/git-github'
+alias git_github='cd /sdcard/Documents/git-github'
 
 # Google
 alias ip_google='echo 142.250.75.227'
