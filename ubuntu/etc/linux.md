@@ -84,6 +84,27 @@ PATH=$(getconf PATH)
 |`systemctl [start\|stop\|status\|enable\|disable\|is-enabled] <nom_service>.service` | actions sur un service `<nom_service>` (enable : at boot time)|
 |`service --status-all`|renvoie l'état de tous les services|
 
+### Bluetooth
+
+_Activate and use bluetooth from the command line_
+
+`bluetoothctl` command can be used in interactive mode
+
+- main commands : `scan, pair, paired-devices, connect, disconnect, remove, info, show`
+
+> When error `a2dp-sink profile connect failed for 78:44:05:D2:D5:8D: Protocol not available` is logged into `journalctl`, do as follows
+
+```bash
+sudo apt-get install pulseaudio-module-bluetooth
+sudo killall pulseaudio
+pulseaudio --start    
+sudo systemctl restart bluetooth
+```
+
+_Reference_
+
+- [askubuntu](https://askubuntu.com/questions/1172000/a2dp-sink-profile-connect-failed)
+
 ## Fun
 
 ```bash
