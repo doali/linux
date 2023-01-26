@@ -53,7 +53,7 @@ PATH=$(getconf PATH)
 |make|lancement de la compilation|
 |docker|logiciel permettant la conteneurisation|
 |mktemp|creation d'un repertoire / fichier temporaire|
-|dmesg|boucle d'informations concernant les interractions avec le noyau|
+|dmesg|boucle d'informations concernant les interractions avec le noyau (notamment les périphériques)|
 |journalctl|affiche les infos nourries par systemd|
 |stat|affiche, inode, type fichier / répertoire, périphérique...|
 |bat|similaire à cat|
@@ -64,12 +64,21 @@ PATH=$(getconf PATH)
 |$_|retourne le dernier argument de la commande précédente|
 |find|rechercher des fichiers sur critères|
 
+*exemples*
+
+- `dmesg -w` pour observer de façon continue les évènements adresser au noyau
+- `journalctl -f` pour observer de façon continue le journal
+
 ## Recherche
 
 |commandes|utilisation|
 |:---------|:-----------|
 |`find . -type f -exec ls -l {} \;`|exécute la commande `ls -l` sur tous les fichiers du répertoire courant|
 |`find . -mmin -1 -exec cat {} \;`|affiche tous les fichiers modifiés il y a moins de 1 minute|
+
+**find ... `\;` vs `+`**
+
+> Variante avec disctinction importante retour à la ligne, flux... `find . -mmin -1 -exec cat {} +` pour afficher tous les fichiers modifiés il y a moins de 1 minute
 
 ## Filtrage
 
