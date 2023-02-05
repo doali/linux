@@ -100,6 +100,7 @@ redis-server
 ruby
 ruby-all-dev
 ruby-google-protobuf
+rustc
 screen
 smcroute
 solargraph
