@@ -4,6 +4,7 @@ ansible
 bats
 build-essential
 bvi
+cargo
 chromium-browser
 clang-format
 cmake
