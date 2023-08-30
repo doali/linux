@@ -75,6 +75,7 @@ PATH=$(getconf PATH)
 |:---------|:-----------|
 |`find . -type f -exec ls -l {} \;`|exécute la commande `ls -l` sur tous les fichiers du répertoire courant|
 |`find . -mmin -1 -exec cat {} \;`|affiche tous les fichiers modifiés il y a moins de 1 minute|
+|`find . -iname "*" -exec bash -c "file {} \| grep ASCII && cat -n {}"  \;`|affiche le contenu de fichiers text (grep ASCII)|
 
 **find ... `\;` vs `+`**
 
