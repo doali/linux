@@ -93,6 +93,7 @@ Pour changer radicalement de style, exécuter l'une de ces commandes :
 | Pastel Powerline | `starship preset pastel-powerline -o ~/.config/starship.toml` |
 | Pure | `starship preset pure-preset -o ~/.config/starship.toml` |
 | Gruvbox Rainbow | `starship preset gruvbox-rainbow -o ~/.config/starship.toml` |
+| Bracketed segments | `starship preset bracketed-segments -o ~/.config/starship.toml` |
 
 ---
 
