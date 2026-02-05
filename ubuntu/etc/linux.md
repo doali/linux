@@ -88,6 +88,12 @@ PATH=$(getconf PATH)
 |grep|`cat file_name \| grep "\S"` : supprime toutes les lignes vides|
 |sed|`sed -i "s/^$/#/" CPackConfig.cmake` : ajoute un `#` sur toutes les lignes vides; -i modification sur place|
 
+## Comparaison
+
+|commandes|utilisation|
+|:---------|:-----------|
+|vimdiff <(tree -L 1 .) <(tree -L 1 /tmp/workspace_portage/)|compare le resultat de deux commandes|
+
 ## Services
 
 |commandes|utilisation|
@@ -108,7 +114,7 @@ _Activate and use bluetooth from the command line_
 ```bash
 sudo apt-get install pulseaudio-module-bluetooth
 sudo killall pulseaudio
-pulseaudio --start    
+pulseaudio --start
 sudo systemctl restart bluetooth
 ```
 
@@ -152,7 +158,7 @@ _Utilisation_
 means `run commands` or else `run control`
 
 - used for any file that contains startup information for a command
-- controls how a program runs 
+- controls how a program runs
 - contains its initial configuration
 
 ## Biblio
