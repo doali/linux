@@ -1,0 +1,91 @@
+{
+   "checksum": "af81312b180adc24fa102abc908e8ad8",
+   "roots": {
+      "bookmark_bar": {
+         "children": [ {
+            "date_added": "13420581097781481",
+            "date_last_used": "13430746908020774",
+            "guid": "c41266b3-2e45-4bc0-a8ce-762f7050f4ba",
+            "id": "7",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "M365 Copilot",
+            "type": "url",
+            "url": "https://m365.cloud.microsoft/chat/conversation/"
+         }, {
+            "date_added": "13420662069385600",
+            "date_last_used": "13427517729124145",
+            "guid": "d6fd5a3f-6a76-4895-b4c3-f02e8d7f1f49",
+            "id": "9",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "Portail Multi IA Gen",
+            "type": "url",
+            "url": "https://iag.edf.fr/fr/product/ai-knowledge-chat/agent?id=group%3Aportail"
+         }, {
+            "date_added": "13423566817575834",
+            "date_last_used": "13427181129135810",
+            "guid": "102e2da7-4db5-4e4f-a1cf-4c94c4c19b91",
+            "id": "13",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "Boîte de réception – LEJUS Xavier - externe – Outlook",
+            "type": "url",
+            "url": "https://outlook.cloud.microsoft/mail/"
+         }, {
+            "date_added": "13426787912428792",
+            "date_last_used": "13427451665938656",
+            "guid": "dd4ec7ca-3c4d-4825-9e86-36ba10ffedde",
+            "id": "15",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "CORE:ConstructionProduitV5:GenerationISIS — Wiki IGC",
+            "type": "url",
+            "url": "https://wiki-igc.dpih.edf.fr/index.php/CORE:ConstructionProduitV5:GenerationISIS"
+         } ],
+         "date_added": "13419237306118416",
+         "date_last_used": "0",
+         "date_modified": "13426787912428792",
+         "guid": "0bc5d13f-2cba-5d74-951f-3f233fe6c908",
+         "id": "1",
+         "name": "Bookmarks bar",
+         "type": "folder"
+      },
+      "other": {
+         "children": [ {
+            "date_added": "13419238406719683",
+            "date_last_used": "0",
+            "guid": "ca66a06d-a4d9-4aa6-a69c-96bd02116018",
+            "id": "5",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "microsoft/RustTraining: Beginner, advanced, expert level Rust training material",
+            "type": "url",
+            "url": "https://github.com/microsoft/RustTraining"
+         } ],
+         "date_added": "13419237306118416",
+         "date_last_used": "0",
+         "date_modified": "13420581097781481",
+         "guid": "82b081ec-3dd3-529c-8475-ab6c344590dd",
+         "id": "2",
+         "name": "Other bookmarks",
+         "type": "folder"
+      },
+      "synced": {
+         "children": [  ],
+         "date_added": "13419237306118416",
+         "date_last_used": "0",
+         "date_modified": "0",
+         "guid": "4cf2e351-0e85-532b-bb37-df045d8f8d0f",
+         "id": "3",
+         "name": "Mobile bookmarks",
+         "type": "folder"
+      }
+   },
+   "version": 1
+}
